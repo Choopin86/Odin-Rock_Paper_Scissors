@@ -91,6 +91,9 @@ resetButton.addEventListener("click", (e) => {
   humanScoreDisplay.textContent = humanScore;
   computerScoreDisplay.textContent = computerScore;
   resultDisplay.textContent = result;
+  resetButton.remove();
+  winner.textContent = "";
+  buttons.replaceChildren(rockBtn, paperBtn, scissorsBtn);
 });
 
 function playGame(humanChoice) {
